@@ -25,7 +25,10 @@ export default function Home() {
             banks on Solana.
           </h3>
           <div className="flex items-center justify-center gap-4 mt-10 flex-col-reverse md:flex-row">
-            <a href="https://solsaver.notion.site/Solsaver-Banking-without-banks-b43313bea41e4fb6be75d14e9daeaec9?pvs=25">
+            <a
+              target="_blank"
+              href="https://solsaver.notion.site/Solsaver-Banking-without-banks-b43313bea41e4fb6be75d14e9daeaec9?pvs=25"
+            >
               <Button variant="ghost">Check our progress</Button>
             </a>
             <a href="#survey">
