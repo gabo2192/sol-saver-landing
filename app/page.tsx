@@ -1,113 +1,118 @@
+import Logo from "@/icons/logo";
+import bgImage from "@/public/bg-header.jpeg";
+import chart from "@/public/chart1.png";
+import neoBank from "@/public/neo-bank.png";
+import pattern from "@/public/pattern.jpeg";
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-background ">
+      <section className="relative w-full ">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={bgImage}
+          alt="Background Image"
+          width={1600}
+          height={899}
+          className="absolute inset-0 object-cover w-full h-full z-0"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className="relative z-10 w-full py-64 px-4">
+          <div className="w-80 mx-auto mb-10">
+            <Logo />
+          </div>
+          <h1 className="text-foreground text-5xl font-bold text-center">
+            Banking, without banks.
+          </h1>
+        </div>
+      </section>
+      <section className="bg-foreground text-gray-700 px-4 py-10 w-full border-b border-background">
+        <h2 className="text-5xl font-bold max-w-2xl mx-auto mb-10">
+          Humanity is facing a troubling future.
+        </h2>
+        <div className="grid md:grid-cols-3 max-w-2xl mx-auto gap-4 md:gap-10 font-medium">
+          <div>
+            <p>
+              Corrupt banks and goverments, conflict, inflation and poverty are
+              taking hold.
+            </p>
+          </div>
+          <div>
+            <p className="mb-4">
+              Purchasing power is decreasing for everyday people.
+            </p>
+            <p>Saving pots are increasing but worth less, everyday.</p>
+          </div>
+          <div>
+            <p>
+              Individuals and families are struggling to secure a stable
+              financial future.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-foreground text-gray-700 px-4 py-10 w-full border-b border-background">
+        <div className="max-w-2xl mx-auto flex flex-row  md:gap-20">
+          <div className="h-4 w-28 bg-background mb-4"></div>
+        </div>
+        <div className="max-w-2xl mx-auto flex flex-col md:flex-row  md:gap-20">
+          <div>
+            <h2 className="text-5xl font-bold mb-10 w-80">
+              There is <br />
+              hope.
+            </h2>
+          </div>
+          <div className="flex flex-col gap-10 font-medium">
+            <p>
+              The world is starting to believe that crypto can give them
+              financial transparency, security and resilience...
+            </p>
+            <p>...they believe it can shift the balance of power.</p>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 max-w-2xl mx-auto px-4">
+        <div className=" flex flex-row  md:gap-20 ">
+          <div className="h-4 w-28 bg-[#01EDA2] mb-4"></div>
+        </div>
+        <h2 className="text-5xl font-bold mb-10">
+          A decentralised world is growing around us.
+        </h2>
+        <p>
+          Web3 is emerging from crypto trying to solve big problems in a
+          decentralised way. <span className="text-[#01EDA2]">Solana</span> is
+          leading the charge by driving{" "}
+          <span className="text-[#01EDA2]">adoption</span> through appealing to{" "}
+          <span className="text-[#01EDA2]">everyday people</span>. The
+          opportunity to{" "}
+          <span className="text-[#01EDA2]">&#39;bank the unbanked&#39;</span>{" "}
+          and to drive financial self-efficacy is big and real. But crypto and
+          Web3 suffer from bad press and years of bad actors exploiting people
+        </p>
+      </section>
+      <section className="relative w-full p-10 ">
+        <Image
+          src={pattern}
+          alt="Pattern Image"
+          width={1600}
+          height={899}
+          className="absolute inset-0 object-cover w-full h-full z-0"
+        />
+        <Image
+          src={chart}
+          alt="Chart Image"
+          width={1600}
+          height={899}
+          className="relative z-10 mx-auto"
+        />
+      </section>
+      <section className="w-full ">
+        <Image
+          src={neoBank}
+          alt="Neo Bank"
+          width={1600}
+          height={899}
+          className="relative z-10 mx-auto"
+        />
+      </section>
     </main>
   );
 }
